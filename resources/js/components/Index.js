@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from './AppRouter';
+import Navbar from './Navbar';
 
 function Index() {
     return (
         <>
+        <Router>
+            <AppRouter/>
+        </Router>
         </>
     );
 }
